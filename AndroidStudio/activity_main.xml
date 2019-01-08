@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/btn_breakfast"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:padding="1dp"
+        android:clickable="true"
+        android:focusable="auto">
+        <TextView
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:text="@string/breakfast_text"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/breakfast"
+            android:focusable="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn_lunch"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:padding="1dp"
+        android:clickable="true">
+        <TextView
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:text="@string/lunch_text"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:scaleY="1"
+            android:src="@drawable/lunch" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn_dinner"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:padding="1dp"
+        android:clickable="true">
+        <TextView
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:text="@string/dinner_text"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:contentDescription="sample dinner image of Pasta"
+            android:scaleType="fitXY"
+            android:src="@drawable/pasta" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="bottom">
+        <Button
+            android:id="@+id/btn_create_new"
+            style="@android:style/Widget.Holo.Button.Toggle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_mode_edit_black_24dp" />
+        <Button
+            android:id="@+id/btn_download"
+            style="@android:style/Widget.Holo.Button.Toggle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_file_download_black_24dp" />
+    </LinearLayout>
+
+</LinearLayout>
