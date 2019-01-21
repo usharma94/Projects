@@ -34,13 +34,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnAdd(_ sender: UIButton) {
-        
-        //stack auxContact variable (btnAdd) --> create object on Heap, mame, address, phone
-        //local variable inside btn :data type declared after :
-        //this is equvalent Contact auxContact c1 = new auxContact() c# comparative
-        //we are in the stack the object auxContact
-        //when var can be nil the datatype can have ?, field is optional
-        //! is for unwrapping
        
         var auxContact: Contact = Contact()
         
@@ -73,10 +66,7 @@ class ViewController: UIViewController {
                     isFound = true
                     break
                 }
-            /*else
-                {
-                  lblMessage.text = "CONTACT NOT FOUND"
-                } */
+          
         }
         //either EO Loop, or element found
         if isFound == true
