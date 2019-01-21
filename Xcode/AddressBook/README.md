@@ -1,6 +1,6 @@
 # Personal Work and Projects
 
-Consists of personal projects, public job projects and school projects.
+Project: Address book used to add and search contacts. 
 
 Languages used:
 * **Swift**
