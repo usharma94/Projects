@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="sheridan.sharmupm.assignment3.domain.Flower"/>
+        <variable name="flower" type="Flower" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/mars_image"
+                app:imageUrl="@{flower.picture}"
+                android:layout_width="64dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/backgrounds/scenic" />
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/flower_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:text="@{flower.label}"
+                    tools:text="Flower" />
+                <TextView
+                    android:id="@+id/flower_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:text="@{flower.price}"
+                    android:textColor="@color/green_100"
+                    tools:text="Price" />
+            </TableRow>
+
+        <TextView
+            android:id="@+id/flower_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_marginLeft="250dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:text="@{flower.text}"
+            tools:text="Text" />
+        </TableLayout>
+    </LinearLayout>
+</layout>
