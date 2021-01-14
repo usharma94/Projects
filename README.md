@@ -9,6 +9,7 @@ Languages used:
 * **C**
 * **C++**
 * **SQL**
+* **Kotlin**
 
 Additional:
 * **HTML**
